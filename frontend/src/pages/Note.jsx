@@ -260,7 +260,7 @@ const Note = () => {
 
                             <div>
                                {shareToken && (
-                                    <Link to={`${window.location.origin}/share/${shareToken}`} >
+                                    <Link to={`https://notes-app-green-three.vercel.app/share/${shareToken}`} >
                                         Link
                                     </Link>
                                 )}
