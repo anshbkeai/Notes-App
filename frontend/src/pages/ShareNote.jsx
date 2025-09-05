@@ -14,6 +14,7 @@ const ShareNote = () => {
     const [error, setError] = useState(null);
     const [copied, setCopied] = useState(false);
 
+    console.log(`this is from the share token ${sharetoken}`);
     const fetchViewNote = async () => {
         try {
             setIsLoading(true);
