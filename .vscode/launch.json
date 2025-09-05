@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-NotesApplication<notes>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.notes.notes.NotesApplication",
+            "projectName": "notes",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
