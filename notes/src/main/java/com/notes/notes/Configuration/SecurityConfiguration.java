@@ -46,7 +46,7 @@ public class SecurityConfiguration {
     @Bean
     public CorsConfiguration corsConfiguration() {
         CorsConfiguration corsConfiguration = new CorsConfiguration();
-        corsConfiguration.addAllowedOrigin("http://localhost:5173"); // updaate about this. to the Froentend Url
+        corsConfiguration.addAllowedOrigin("https://notes-app-green-three.vercel.app/"); // updaate about this. to the Froentend Url
         corsConfiguration.addAllowedMethod("*");
         corsConfiguration.addAllowedHeader("*");
         corsConfiguration.setAllowCredentials(true);
