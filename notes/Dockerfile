@@ -6,7 +6,7 @@ FROM eclipse-temurin:21 AS build
 WORKDIR /app
 
 # Copy only pom.xml first for layer caching
-COPY notes/pom.xml .
+COPY pom.xml .
 
 # Install Maven (slim base doesn’t include it)
 RUN apt-get update && apt-get install -y maven
@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y maven
 RUN mvn dependency:go-offline -B
 
 # Copy full source code
-COPY notes/src ./src
+COPY src ./src
 
 # Package (skip tests in Docker build)
 RUN mvn clean package -DskipTests
